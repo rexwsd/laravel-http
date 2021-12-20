@@ -1,0 +1,31 @@
+{
+    "name": "rexwsd/laravel-http",
+    "description": "Laravel框架和GuzzleHttp二次封装基于驱动管理的http服务",
+    "license": "AFL-3.0",
+    "authors": [
+        {
+            "name": "栗田庆",
+            "email": "5198895@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Http\\": "src/"
+        }
+    },
+    "require": {
+        "rexwsd/laravel-log": "*",
+        "guzzlehttp/guzzle": "^6",
+        "illuminate/http": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravel\\Http\\HttpServiceProvider"
+            ],
+            "aliases": {
+                "Http": "Laravel\\Http\\Facades\\Http"
+            }
+        }
+    }
+}
